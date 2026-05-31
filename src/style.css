@@ -1,0 +1,293 @@
+header {
+    background-color:  aliceblue ;
+    font-family: "Azo Sans", sans-serif;
+    padding: 20px; 
+    text-align: center; 
+}
+
+h1 {
+    color:   darkslategrey; 
+    font-family: "Azo Sans", sans-serif;
+    font-size: 2rem;
+}
+
+nav ul { 
+    font-family: "Azo Sans", sans-serif;
+    padding: 0;
+    margin: 10px 0 0 0; 
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.StronaGlowna {
+    display: flex; 
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+    background-color: white;
+}
+
+nav li {
+    font-size: 1.2rem;
+    color:  darkslategrey;
+    font-weight: bold;
+}
+
+.PodStronaGlowna {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center; 
+    align-items: center;
+    gap: 60px; 
+    background: linear-gradient(to right, #f0d1b2 0%, #f5f1ed 45%, rgba(245, 241, 237, 0.8) 70%, white 100%);
+    border-radius: 12px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    padding: 20px;
+
+}
+
+.TekstUmieszczenie {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px; 
+    font-family: "Azo Sans", sans-serif;
+}
+
+.UmiejsciowienieObrazka {
+    flex: 1; 
+}
+
+.UmiejsciowienieObrazka img {
+    width: 500px; 
+    height: auto;
+    border-radius: 8px;
+}
+
+h2 {
+    color: darkslategrey;
+    font-family: "Azo Sans", sans-serif;
+    font-size: 1.5rem;
+    margin-top: 0; 
+    margin-bottom: 20px;
+}
+
+p { 
+    color: #666;
+    font-family: "Azo Sans", sans-serif;
+    line-height: 1.6; 
+    font-size: 1rem;
+    margin-bottom: 20px; 
+}
+
+.KupujTeraz {
+    background: #8ba0a0;
+    border: none;
+    cursor: pointer; 
+    padding: 10px 30px;
+    font-weight: 700;
+    color: white;
+    border-radius: 20px; 
+    font-size: 1rem;
+    align-self: flex-start;
+    transition: background-color 0.9s;
+    
+}
+
+.KupujTeraz:hover {
+    background: #6e8080;
+}
+
+.StronaTytulowa {
+    background-color: #f7f9fc;
+    font-family: "Azo Sans", sans-serif;
+}
+
+nav a {
+  text-decoration: none;
+  color: darkslategrey;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: teal;
+}
+
+.TekstDekoracyjny { 
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin-top: 40px;
+    font-size: 1.8rem;
+    font-weight: bold; 
+    color: darkslategrey;
+}
+
+.TekstDekoracyjny span {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.TekstDekoracyjny span:hover {
+    color:teal;
+}
+
+.Produkt {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.ProduktySekcja { 
+    margin-top:80px;
+    padding:20px;
+    width: 100%;
+}
+
+.ProduktyGrid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:30px;
+}
+
+.Produkt img {
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    background-color: #f7f9fc;
+    border-radius:8px;
+    padding:10px;
+}
+
+.Produkt h3 {
+    margin: 15px 0 10px;
+    color: darkslategrey;
+    font-family: "Azo Sans", sans-serif;
+    font-size: 1.2rem;
+    min-height:50px;
+}
+
+.Produkt p {
+    color: #666;
+    font-family: "Azo Sans", sans-serif;
+    font-size: 0.9rem;
+    min-height:60px;
+}
+
+.Koszyk {
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f3f7f7;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.KoszykItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.Ilosc {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.Ilosc button {
+    padding: 5px 10px;
+    border: none;
+    background: #8ba0a0;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.Cena {
+    font-weight: bold;
+    color: darkslategrey;
+}
+
+.DodajDoKoszyka {
+    margin-top: 10px;
+    background: #8ba0a0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.DodajDoKoszyka:hover {
+    background: #6e8080;
+}
+
+.ModalTlo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.ModalOkno {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+    position: relative;
+}
+
+.ModalOkno img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.ZamknijModal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #666;
+}
+
+.KoszykItem {
+    display: grid;
+    grid-template-columns: 1fr 80px 120px; 
+    /* 1fr = nazwa, 80px = cena, 120px = ilość */
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    gap: 10px;
+}
+
+.KoszykItem span:first-child {
+    font-weight: 500;
+}
+
+.KoszykItem span:nth-child(2) {
+    text-align: right;
+}
